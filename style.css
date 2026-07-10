@@ -1,4 +1,78 @@
-/* Añade esto al inicio de tu style.css */
+:root {
+  --granite: #232B2E;
+  --granite-2: #2E3739;
+  --stone: #6B7570;
+  --snowfield: #ECE8DD;
+  --snowfield-2: #DFDACB;
+  --ember: #AD5A2C;
+  --lantern: #D8A23F;
+  --pine: #4F6350;
+  --ink: #1B2022;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Añade esto al inicio de tu style.css para centrar contenedores */
+.max-width-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 28px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 28px;
+  height: 100%;
+}
+
+.nav-menu a {
+  color: #ECE8DD;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+  color: var(--lantern);
+}
+
+.live-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+
+.cams-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1px;
+  background: var(--snowfield-2);
+}
+
+.quick-access-section {
+  background: var(--snowfield);
+  padding: 80px 0 60px;
+}
+
+.live-section {
+  background: var(--snowfield-2);
+  padding: 70px 0;
+}
+
+/* AQUÍ PEGA EL RESTO DE TU DOCUMENTO CSS (body, h1, header-sticky, hero-slider, etc.) *//* Añade esto al inicio de tu style.css */
 .max-width-container {
   max-width: 1180px;
   margin: 0 auto;
